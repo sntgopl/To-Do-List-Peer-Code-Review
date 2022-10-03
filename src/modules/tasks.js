@@ -2,9 +2,9 @@ import { taskList, updateLocalStorage } from './data.js';
 import refreshList from './refresh.js';
 
 class Task {
-  constructor(string, bool) {
-    this.string = string;
-    this.bool = bool;
+  constructor(description, completed) {
+    this.description = description;
+    this.completed = completed;
     this.number = taskList.length;
   }
 
