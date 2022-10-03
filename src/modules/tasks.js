@@ -8,11 +8,11 @@ class Task {
     this.number = taskList.length;
   }
 
-  addTask() {
+  addTask = () => {
     taskList.push(this);
   }
 
-  remove() {
+  remove = () => {
     for (let i = this.number; i < taskList.length; i += 1) {
       taskList[i].number -= 1;
     }
